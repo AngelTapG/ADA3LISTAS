@@ -53,7 +53,7 @@ def agregar_postre(POSTRES):
     
     if ingredientes:
         POSTRES.append([nombre, ingredientes])
-        POSTRES.sort(key=lambda x: x[0].lower())  # Ordenar alfabéticamente
+        POSTRES.sort(key=lambda x: x[0].lower())  
         print(f"\nPostre '{nombre}' agregado exitosamente.")
     else:
         print("\nNo se agregó el postre porque no se ingresaron ingredientes.")
@@ -129,7 +129,7 @@ def eliminar_repetidos(POSTRES):
         else:
             postres_eliminados.append(postre[0])
     
-    POSTRES[:] = postres_unicos  # Actualizar la lista original
+    POSTRES[:] = postres_unicos  
     
     if postres_eliminados:
         print("\nSe eliminaron los siguientes postres repetidos:")
@@ -139,7 +139,7 @@ def eliminar_repetidos(POSTRES):
         print("\nNo se encontraron postres repetidos.")
 
 def main():
-    POSTRES = []  # Lista vacía inicial
+    POSTRES = []  
     
     while True:
         opcion = mostrar_menu()
